@@ -1,2 +1,2 @@
 # angular-samples
-Just another angular samples project, used for personal practice.
+Just another Angular samples project, used for personal practice.
