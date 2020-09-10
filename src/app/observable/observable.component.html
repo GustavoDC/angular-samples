@@ -1,0 +1,22 @@
+<h2>Observable</h2>
+<div>
+    <span *ngIf="showOnTemplate">
+    Observable 1 (text interpolation): {{ myIntervalObservable$ | async }}<br>
+    </span>
+    Observable 2: {{ message_two }}<br>
+    Observable 3: {{ message_three }}<br>
+    Observable 4: {{ message_four }}
+</div>
+<button (click)="onToggleMessage()">Toggle subscribe 1</button>
+<div>
+    <button (click)="onSubscribeTwo()">Subscribe 2</button> |
+    <button (click)="onUnsubscribeTwo()">Unsubscribe 2</button>
+</div>
+<div>
+    <button (click)="onSubscribeThree()">Subscribe 3: error and complete</button> |
+    <button (click)="onUnsubscribeThree()">Unsubscribe 3</button>
+</div>
+<div>
+    <button (click)="onSubscribeFour()">Subscribe 4: operators</button> |
+    <button (click)="onUnsubscribeFour()">Unsubscribe 4</button>
+</div>
